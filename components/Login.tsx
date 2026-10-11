@@ -38,7 +38,6 @@ export default function Login() {
       <div className="w-full max-w-[600px] rounded-xl bg-[#f972a4] p-3 sm:p-5">
         <div className="flex w-full flex-col items-center rounded-xl bg-white px-4 py-6 sm:px-8 sm:py-8">
           <div className="mb-6 flex w-full flex-col items-center justify-center sm:mb-8">
-            {/* Added strict width/height to prevent scaling bugs */}
             <img
               src="/images/logo.png"
               alt="FoundU logo"
@@ -62,7 +61,6 @@ export default function Login() {
               onClick={handleLogin}
             >
               {!isLoggingIn && (
-                {/* Added strict width/height to fix the giant Google logo */}
                 <img
                   src="https://www.svgrepo.com/show/475656/google-color.svg"
                   alt="Google Logo"
