@@ -60,7 +60,8 @@ function SidebarLink({ text, Icon, href }: SidebarLinkProps) {
   return (
     <li className="mb-6 flex items-center p-2.5 text-xl">
       <Link href={href} className="flex items-center space-x-5">
-        <Icon className="h-7 shrink-0" />
+        {/* Added w-7 right here to stop the horizontal stretching! */}
+        <Icon className="h-7 w-7 shrink-0" />
         <span className="hidden sm:inline">{text}</span>
       </Link>
     </li>
